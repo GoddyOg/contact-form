@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.container {
+    max-width: 550px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-container .name:first-child {
+    margin-right: 10px;
+}
+
+.name-container .name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-container .name input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.name-container .name input[type=text]:focus {
+    background-color: hsl(148, 38%, 91%);
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+/* styling the query type section */
+.query-type {
+    display: flex;
+    /* width: 100%; */
+}
+
+.query-type .queries {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 5px 10px 15px;
+}
+
+.queries:active {
+    background-color: hsl(148, 38%, 91%);
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+.query-type .queries:first-child {
+    margin-right: 10px;
+}
+
+/* Query type stylings end here */
+
+input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.query-type {
+    margin: 10px 0;
+}
+
+.checkbox {
+    margin: 30px 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    color: #fff;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: hsl(147, 49%, 42%);
+}
